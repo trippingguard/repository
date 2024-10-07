@@ -1,0 +1,32 @@
+.hero{ 
+   background-image: url("../../../assets/hero_bg.png");
+   background-position: 60px 5px;
+   height:700px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   position:relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin:auto;
+}
+.hero-text{
+   text-align: center;
+   max-width: 800px;
+   color: #f10101;
+}
+.hero-text h1{
+   font-size: 50px;
+   font-weight: 600;
+}
+.hero-text h2{
+   font-size: 30px;
+   font-weight: 500;
+}
+.hero-text p{
+   max-width: 700px;
+   margin: 10px auto 20px;
+   line-height: 1.4;
+}
+
+
