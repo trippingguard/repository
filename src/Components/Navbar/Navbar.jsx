@@ -1,26 +1,39 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import './Navbar.css'
-import logo from '../../assets/logo_bl.png'
-
+import React from "react";
+//import "./Navbar.css";
+import logo from "../../assets/logo_bl.png";
 
 const Navbar = () => {
+  const menus = [
+    "Home",
+    "About Us",
+    "Causelist",
+    "Publications",
+    "Legislation",
+    "Judgment & Ruling",
+    "Forms",
+    "Public Notice",
+  ];
   return (
-    <nav className='container'>
-      <img src={logo} alt="" className='logo'/>
-      <ul>
-        <li><button className='btn'>Home</button></li>
-        <li><button className='btn'>About Us</button></li>
-        <li><button className='btn'>Causelist</button></li>
-        <li><button className='btn'>Publications</button></li>
-        <li><button className='btn'>Legislation</button></li>
-        <li><button className='btn'>Judgment & Rulling</button></li>
-        <li><button className='btn'>Forms</button></li>
-        <li><button className='btn'>Public Notice</button></li>
+    <header>
+      <nav className="flex items-center justify-center gap-3 p-2 pl-5 bg-red-400">
+        <img src={logo} className="size-16" alt="" />
+        <div className="text-2xl font-bold text-center text-slate-100">
+          <h1 className="">Judiciary of Tanzania</h1>
+          <h2>High Court - Commercial Division</h2>
+        </div>
+        <img src={logo} className="size-16" alt="" />
+        <div></div>
+      </nav>
+      <ul className="flex justify-center w-full gap-3 bg-red-700 shadow">
+        {menus.map((menu) => (
+          <li className="p-2 text-base cursor-pointer text-slate-200">
+            {menu}
+          </li>
+        ))}
       </ul>
-      <img src={logo} alt="" className='logo'/>
-    </nav>
-  )
-}
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;
