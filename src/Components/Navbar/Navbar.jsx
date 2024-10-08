@@ -29,7 +29,10 @@ const Navbar = () => {
       </nav>
       <ul className="bg-red-700 shadow w-full flex gap-3 justify-center">
         {menus.map((menu) => (
-          <li className="text-base p-2 cursor-pointer text-slate-200">
+          <li
+            key={menu}
+            className="text-base p-2 cursor-pointer text-slate-200"
+          >
             {menu}
           </li>
         ))}
