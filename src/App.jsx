@@ -11,20 +11,21 @@ import Judgment from "./Components/Judgements/Judgments";
 
 const App = () => {
   return (
-    <div className="bg-hero bg-center bg-no-repeat bg-cover bg-fixed bg-slate-100">
+    <div className="bg-hero bg-center bg-no-repeat bg-cover bg-fixed bg-slate-100 text-slate-700">
       <Navbar />
-      <News />
       <div className="container">
         <Title
           subTitle="Judiciary of Tanzania"
           title="Organizational Structure"
         />
         <Home />
-        <div className="container">
-          <Title subTitle="Judiciary of Tanzania" title="LINKS" />
-          <Courts />
-          <About />
-        </div>
+      </div>
+      <Judgment />
+      <News />
+      <div className="container">
+        <Title subTitle="Judiciary of Tanzania" title="LINKS" />
+        <Courts />
+        <About />
       </div>
     </div>
   );

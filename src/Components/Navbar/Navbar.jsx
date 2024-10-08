@@ -15,9 +15,9 @@ const Navbar = () => {
     "Public Notice",
   ];
   return (
-    <header>
+    <header className="mb-16">
       <nav className="bg-red-900 w-full">
-        <div className="flex gap-3 p-2 justify-between items-center">
+        <div className="flex p-2 gap-3 justify-center pl-5 items-center w-full">
           <img src={logo} className="size-16 self-start" alt="" />
           <div className="text-slate-100 text-center text-2xl font-bold">
             <h1 className="">Judiciary of Tanzania</h1>
