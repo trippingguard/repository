@@ -7,15 +7,12 @@ import Title from "./Components/Title/Title";
 import About from "./Components/About/About";
 import Courts from "./Components/Courts/Courts";
 import News from "./Components/News/News";
+import Judgment from "./Components/Judgements/Judgments";
 
 const App = () => {
   return (
     <div className="bg-hero bg-center bg-no-repeat bg-cover bg-fixed bg-slate-100">
       <Navbar />
-      <Hero />
-      <div className="container">
-        <Title subTitle="" title="Latest News" />
-      </div>
       <News />
       <div className="container">
         <Title
