@@ -16,8 +16,22 @@ const Home = () => {
                <p>Click for more</p>
             </div>
         </div>
-        <div  className='new1'>
+        <div  className='new'>
             <img src={news2} alt="" />
+            <div className='caption'>
+               <img src={home_icon} alt="" /> 
+               <p>Click for more</p>
+            </div>
+        </div>
+        <div  className='new'>
+            <img src={news3} alt="" />
+            <div className='caption'>
+               <img src={home_icon} alt="" /> 
+               <p>Click for more</p>
+            </div>
+        </div>
+        <div  className='new'>
+            <img src={news3} alt="" />
             <div className='caption'>
                <img src={home_icon} alt="" /> 
                <p>Click for more</p>
