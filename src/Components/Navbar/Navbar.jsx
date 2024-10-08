@@ -27,6 +27,7 @@ const Navbar = () => {
       </nav>
       <ul className="flex justify-center w-full gap-3 bg-red-700 shadow">
         {menus.map((menu) => (
+          // eslint-disable-next-line react/jsx-key
           <li className="p-2 text-base cursor-pointer text-slate-200">
             {menu}
           </li>
