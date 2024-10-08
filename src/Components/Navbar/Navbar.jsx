@@ -17,12 +17,12 @@ const Navbar = () => {
   return (
     <header>
       <nav className="flex justify-center gap-3 pl-5 bg-red-400 p-2 items-center">
-        <img src={logo} className="size-16" alt="" />
+        <img src={logo} className="size-16 self-start" alt="" />
         <div className="text-slate-100 text-center text-2xl font-bold">
           <h1 className="">Judiciary of Tanzania</h1>
           <h2>High Court - Commercial Division</h2>
         </div>
-        <img src={logo} className="size-16" alt="" />
+        <img src={logo} className="size-16 self-end" alt="" />
         <div></div>
       </nav>
       <ul className="bg-red-700 shadow w-full flex gap-3 justify-center">
