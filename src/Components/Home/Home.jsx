@@ -9,18 +9,28 @@ import home_icon from "../../assets/logo_bl.png";
 
 const Home = () => {
   return (
-    <div className="mb-16 w-full">
+    <div className="mb-24 w-full">
       <div className="w-9/12 mx-auto">
-        <div className="mb-8 text-center text-xl">
-          <p className="mb-3  ">
+        <h1 className="text-center mb-5 text-3xl font-semibold">
+          Organizational Structure
+        </h1>
+        <div className="mb-16 md:text-center text-2xl">
+          <p className="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             dignissimos recusandae quae eos hic sequi quisquam architecto aut
             consequuntur, at odio tempora, suscipit aspernatur laborum, rem
             tempore maiores impedit! Suscipit!
           </p>
-          <p className="italic animate-pulse underline underline-offset-4 hover:cursor-pointer hover:text-sky-600 text-red-500">
-            Find out more!
-          </p>
+          <div className="flex items-center md:ml-4 gap-2 underline underline-offset-4 hover:cursor-pointer text-sky-600">
+            <p>Find out more</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              className="h-5 w-8 fill-sky-600"
+            >
+              <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+            </svg>
+          </div>
         </div>
       </div>
       <div className="flex gap-1 justify-center">

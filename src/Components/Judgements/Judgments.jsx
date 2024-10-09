@@ -26,7 +26,7 @@ const Judgment = () => {
   ];
 
   return (
-    <div className="bg-red-100 mb-16 p-8">
+    <div className="bg-red-100 mb-24 p-8">
       <div className="w-9/12 mx-auto mb-5">
         <h1 className="text-2xl font-semibold mb-3">Latest Judgments</h1>
         <div className="grid grid-cols-2 gap-5">
