@@ -16,20 +16,20 @@ const Navbar = () => {
   ];
   return (
     <header className="mb-16">
-      <nav className="bg-red-900 w-full">
-        <div className="flex p-2 gap-3 justify-center pl-5 items-center w-full">
-          <img src={logo} className="size-16 self-start" alt="" />
-          <div className="text-slate-100 text-center text-2xl font-bold">
+      <nav className="w-full bg-red-900">
+        <div className="flex items-center justify-between w-full gap-3 p-2 pl-5">
+          <div><img src={logo} className="self-start size-20" alt="" /></div>
+          <div className="text-2xl font-bold text-center text-slate-100">
             <h1 className="">Judiciary of Tanzania</h1>
             <h2>High Court - Commercial Division</h2>
           </div>
-          <img src={logo} className="size-16 self-end" alt="" />
-          <div></div>
+           <div><img src={logo} className="self-end size-20" alt="" /></div>
+         
         </div>
       </nav>
-      <ul className="bg-red-700 shadow w-full flex gap-3 justify-center">
+      <ul className="flex justify-center w-full gap-3 bg-red-700 shadow">
         {menus.map((menu) => (
-          <li className="text-base p-2 cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
+          <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
             {menu}
           </li>
         ))}
