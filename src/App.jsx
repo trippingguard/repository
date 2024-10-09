@@ -7,28 +7,26 @@ import Title from "./Components/Title/Title";
 import About from "./Components/About/About";
 import Courts from "./Components/Courts/Courts";
 import News from "./Components/News/News";
+import Judgment from "./Components/Judgements/Judgments";
 
 const App = () => {
   return (
-    <div className="bg-hero bg-center bg-no-repeat bg-cover bg-fixed bg-slate-100">
+    <div className="bg-hero bg-center bg-no-repeat bg-cover bg-fixed text-slate-700">
       <Navbar />
-      <Hero />
-      <div className="container">
-        <Title subTitle="" title="Latest News" />
-      </div>
-      <News />
       <div className="container">
         <Title
           subTitle="Judiciary of Tanzania"
           title="Organizational Structure"
         />
         <Home />
-        <div className="container">
-          <Title subTitle="Judiciary of Tanzania" title="LINKS" />
-          <Courts />
-          <About />
-        </div>
       </div>
+      <Judgment />
+      <News />
+      <div className="container">
+        <Title subTitle="Judiciary of Tanzania" title="LINKS" />
+        <Courts />
+      </div>
+      <About />
     </div>
   );
 };

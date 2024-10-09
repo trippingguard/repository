@@ -10,9 +10,6 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
-body {
-  background: #ff242418;
-}
 a {
   text-decoration: none;
   color: inherit;

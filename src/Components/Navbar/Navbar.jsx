@@ -15,20 +15,21 @@ const Navbar = () => {
     "Public Notice",
   ];
   return (
-    <header>
-      <nav className="flex items-center justify-center gap-3 p-2 pl-5 bg-red-400">
-        <img src={logo} className="size-16" alt="" />
-        <div className="text-2xl font-bold text-center text-slate-100">
-          <h1 className="">Judiciary of Tanzania</h1>
-          <h2>High Court - Commercial Division</h2>
+    <header className="mb-16">
+      <nav className="bg-red-900 w-full">
+        <div className="flex p-2 gap-3 justify-center pl-5 items-center w-full">
+          <img src={logo} className="size-16 self-start" alt="" />
+          <div className="text-slate-100 text-center text-2xl font-bold">
+            <h1 className="">Judiciary of Tanzania</h1>
+            <h2>High Court - Commercial Division</h2>
+          </div>
+          <img src={logo} className="size-16 self-end" alt="" />
+          <div></div>
         </div>
-        <img src={logo} className="size-16" alt="" />
-        <div></div>
       </nav>
-      <ul className="flex justify-center w-full gap-3 bg-red-700 shadow">
+      <ul className="bg-red-700 shadow w-full flex gap-3 justify-center">
         {menus.map((menu) => (
-          // eslint-disable-next-line react/jsx-key
-          <li className="p-2 text-base cursor-pointer text-slate-200">
+          <li className="text-base p-2 cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
             {menu}
           </li>
         ))}
