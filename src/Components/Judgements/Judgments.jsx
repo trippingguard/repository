@@ -54,7 +54,7 @@ const Judgment = () => {
         </div>
       </div>
       <div className="w-9/12 mx-auto">
-        <button className="text-lg border border-red-300 p-3 bg-red-200 hover:bg-red-400 hover:border-none hover:text-slate-50 hover:shadow-[4px_4px_0_#ef4444] rounded-lg">
+        <button className="text-lg text-sky-50 p-3 bg-sky-500 rounded-lg hover:bg-slate-700">
           See more judgments
         </button>
       </div>

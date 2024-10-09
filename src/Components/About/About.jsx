@@ -29,7 +29,7 @@ function About() {
   return (
     <div className="w-full mb-24">
       <div className="about-right w-9/12 mx-auto">
-        <h2 className="text-2xl font-bold mb-4 text-center">
+        <h2 className="text-2xl font-bold mb-5 text-center">
           Judiciary of Tanzania
         </h2>
         <div className="flex gap-3 text-slate-500 w-full">
