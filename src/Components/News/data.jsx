@@ -2,6 +2,8 @@ export const newsContent = [
   {
     id: 1,
     url: "/src/assets/bg_color.JPG",
+    date: "Oct 7, 2024",
+    author: "Jeremiah Lubango",
     heading: "Site Inspection for Songea IJC",
     content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla adipisci
       ratione exercitationem provident, voluptate accusantium ducimus blanditiis
@@ -11,6 +13,8 @@ export const newsContent = [
   {
     id: 2,
     url: "/src/assets/bg_color.JPG",
+    date: "Oct 8, 2024",
+    author: "Mary Gwela",
     heading: "Site Inspection for Songea IJC",
     content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla adipisci
       ratione exercitationem provident, voluptate accusantium ducimus blanditiis
@@ -20,6 +24,8 @@ export const newsContent = [
   {
     id: 3,
     url: "/src/assets/bg_color.JPG",
+    date: "Oct 6, 2024",
+    author: "Timothy Mwelu",
     heading: "Site Inspection for Songea IJC",
     content: `Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet
       consectetur adipisicing elit. Iste fugiat ratione iure at numquam, aliquid

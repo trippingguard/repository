@@ -11,7 +11,7 @@ import Judgment from "./Components/Judgements/Judgments";
 
 const App = () => {
   return (
-    <div className="bg-hero bg-center bg-no-repeat bg-cover bg-fixed bg-slate-100 text-slate-700">
+    <div className="bg-hero bg-center bg-no-repeat bg-cover bg-fixed text-slate-700">
       <Navbar />
       <div className="container">
         <Title
@@ -25,8 +25,8 @@ const App = () => {
       <div className="container">
         <Title subTitle="Judiciary of Tanzania" title="LINKS" />
         <Courts />
-        <About />
       </div>
+      <About />
     </div>
   );
 };

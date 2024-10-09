@@ -5,7 +5,7 @@ import court_img from "../../assets/crt_red.png";
 
 const Courts = () => {
   return (
-    <div className="court container">
+    <div className="court container mb-16">
       <ul>
         <li>
           <div className="court-text">

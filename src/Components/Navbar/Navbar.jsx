@@ -29,7 +29,7 @@ const Navbar = () => {
       </nav>
       <ul className="bg-red-700 shadow w-full flex gap-3 justify-center">
         {menus.map((menu) => (
-          <li className="text-base p-2 cursor-pointer text-slate-200">
+          <li className="text-base p-2 cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
             {menu}
           </li>
         ))}
