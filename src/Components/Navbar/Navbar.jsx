@@ -15,15 +15,15 @@ const Navbar = () => {
     "Public Notice",
   ];
   return (
-    <header className="mb-16">
-      <nav className="bg-red-900 w-full">
-        <div className="flex p-2 gap-3 justify-center pl-5 items-center w-full">
-          <img src={logo} className="size-16 self-start" alt="" />
+    <header className="mb-24">
+      <nav className="bg-red-900">
+        <div className="flex p-3 gap-3 justify-between items-center w-9/12 mx-auto">
+          <img src={logo} className="size-16" alt="" />
           <div className="text-slate-100 text-center text-2xl font-bold">
-            <h1 className="">Judiciary of Tanzania</h1>
-            <h2>High Court - Commercial Division</h2>
+            <h1 className="">High Court of Tanzania</h1>
+            <h2>Commercial Division</h2>
           </div>
-          <img src={logo} className="size-16 self-end" alt="" />
+          <img src={logo} className="size-16" alt="" />
           <div></div>
         </div>
       </nav>
