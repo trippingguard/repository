@@ -8,18 +8,13 @@ import About from "./Components/About/About";
 import Courts from "./Components/Courts/Courts";
 import News from "./Components/News/News";
 import Judgment from "./Components/Judgements/Judgments";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
     <div className="bg-hero bg-center bg-no-repeat bg-cover bg-fixed text-slate-700">
       <Navbar />
-      <div className="container">
-        <Title
-          subTitle="Judiciary of Tanzania"
-          title="Organizational Structure"
-        />
-        <Home />
-      </div>
+      <Home />
       <Judgment />
       <News />
       <div className="container">
@@ -27,6 +22,7 @@ const App = () => {
         <Courts />
       </div>
       <About />
+      <Footer />
     </div>
   );
 };
