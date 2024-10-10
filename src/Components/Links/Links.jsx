@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 //import "./Courts.css";
-import court_img from "../../assets/crt_red.png";
 import { links } from "./data";
 
 const Link = () => {
@@ -11,6 +10,7 @@ const Link = () => {
         <h1 className="mb-5 text-2xl font-bold text-center">Related Links</h1>
         <div className="grid grid-cols-3 gap-10 place-items-center text-slate-500">
           {links.map((link) => (
+            // eslint-disable-next-line react/jsx-key
             <a href={link.url} target="_blank">
               <div className="flex flex-col items-center justify-center w-full gap-2 p-4 text-center bg-transparent border border-red-200 rounded-md">
                 <img src={link.img} alt="" className="size-12" />
