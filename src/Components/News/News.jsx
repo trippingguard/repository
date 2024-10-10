@@ -11,7 +11,7 @@ const News = () => {
           {newsContent.map((content) => (
             <div
               key={content.id}
-              className="flex items-center gap-4 p-2 bg-transparent border border-red-900 rounded-md cursor-pointer"
+              className="flex items-center gap-4 p-2 bg-red-900 border border-red-900 rounded-md cursor-pointer bg-opacity-10"
             >
               <img src={content.url} className="h-auto rounded-md w-80" />
               <div className="">

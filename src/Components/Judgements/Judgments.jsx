@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 const Judgment = () => {
@@ -26,16 +27,16 @@ const Judgment = () => {
   ];
 
   return (
-    <div className="bg-red-100 mb-24 p-8">
+    <div className="p-8 mb-24 bg-transparent">
       <div className="w-9/12 mx-auto mb-5">
-        <h1 className="text-2xl font-semibold mb-3">Latest Judgments</h1>
+        <h1 className="mb-3 text-2xl font-semibold">Latest Judgments</h1>
         <div className="grid grid-cols-2 gap-5">
           {contents.map((content) => (
             <div
               key={content.id}
-              className="bg-red-50 p-4 border border-red-200 rounded-md cursor-pointer"
+              className="p-4 bg-red-900 border border-red-800 rounded-md cursor-pointer bg-opacity-10"
             >
-              <div className="mb-2 flex items-center gap-2">
+              <div className="flex items-center gap-2 mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
@@ -54,7 +55,7 @@ const Judgment = () => {
         </div>
       </div>
       <div className="w-9/12 mx-auto">
-        <button className="text-lg text-sky-50 p-3 bg-sky-500 rounded-lg hover:bg-slate-700">
+        <button className="p-3 text-lg rounded-lg text-sky-50 bg-sky-500 hover:bg-slate-700">
           See more judgments
         </button>
       </div>
