@@ -27,12 +27,12 @@ function About() {
     },
   ];
   return (
-    <div className="w-full mb-24">
-      <div className="about-right w-9/12 mx-auto">
+    <div className="max-w-[980px] w-full mx-auto mb-16 md:mb-24 p-5">
+      <div className="about-right">
         <h2 className="text-2xl font-bold mb-5 text-center">
           Judiciary of Tanzania
         </h2>
-        <div className="flex gap-3 text-slate-500 w-full">
+        <div className="flex md:flex-row flex-col gap-3 text-slate-500 w-full">
           {contents.map((content) => (
             <div
               key={content.id}

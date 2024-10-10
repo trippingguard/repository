@@ -3,14 +3,14 @@ import { newsContent } from "./data";
 
 const News = () => {
   return (
-    <div className="bg-red-100 mb-24 p-8">
-      <div className="w-9/12 mx-auto mb-5">
+    <div className="bg-red-100 mb-16 md:mb-24 p-8 max-w-[980px] w-full mx-auto">
+      <div className="mb-5">
         <h1 className="text-2xl font-semibold mb-3">Latest News</h1>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-5">
           {newsContent.map((content) => (
             <div
               key={content.id}
-              className="bg-red-50 flex gap-4 items-center cursor-pointer p-2 border border-red-200 rounded-md"
+              className="bg-red-50 flex md:flex-row flex-col gap-4 items-center cursor-pointer p-2 border border-red-200 rounded-md"
             >
               <img src={content.url} className="h-auto w-80 rounded-md" />
               <div className="">
@@ -48,7 +48,7 @@ const News = () => {
           ))}
         </div>
       </div>
-      <div className="w-9/12 mx-auto">
+      <div className="">
         <button className="text-lg text-sky-50 p-3 bg-sky-500 rounded-lg hover:bg-slate-700">
           See more news
         </button>

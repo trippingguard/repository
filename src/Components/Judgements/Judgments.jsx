@@ -26,10 +26,10 @@ const Judgment = () => {
   ];
 
   return (
-    <div className="bg-red-100 mb-24 p-8">
-      <div className="w-9/12 mx-auto mb-5">
+    <div className="bg-red-100 mb-16 md:mb-24 p-8 max-w-[980px] w-full mx-auto ">
+      <div className="mb-5">
         <h1 className="text-2xl font-semibold mb-3">Latest Judgments</h1>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
           {contents.map((content) => (
             <div
               key={content.id}
@@ -53,7 +53,7 @@ const Judgment = () => {
           ))}
         </div>
       </div>
-      <div className="w-9/12 mx-auto">
+      <div className="">
         <button className="text-lg text-sky-50 p-3 bg-sky-500 rounded-lg hover:bg-slate-700">
           See more judgments
         </button>

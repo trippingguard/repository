@@ -9,12 +9,12 @@ import home_icon from "../../assets/logo_bl.png";
 
 const Home = () => {
   return (
-    <div className="w-full mb-24">
-      <div className="w-9/12 mx-auto">
-        <h1 className="mb-5 text-3xl font-semibold text-center">
+    <div className="w-full mb-16 md:mb-24">
+      <div className="md:w-[980px] mx-auto w-full px-5">
+        <h1 className="mb-5 md:text-3xl text-2xl font-semibold md:text-center">
           Organizational Structure
         </h1>
-        <div className="mb-16 text-2xl md:text-center">
+        <div className="mb-16 md:text-2xl textl-lg md:text-center">
           <p className="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             dignissimos recusandae quae eos hic sequi quisquam architecto aut
@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center gap-1">
+      <div className="hidden md:flex justify-center gap-1">
         {pictures.map((picture) => (
           <div
             key={picture.id}

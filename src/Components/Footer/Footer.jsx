@@ -2,10 +2,10 @@ const Footer = () => {
   const thisYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-red-50 w-full text-slate-500">
-      <div className="max-w-[980px] mx-auto">
-        <div className="flex justify-between py-14 ">
-          <div>
+    <footer className="w-full bg-red-50 text-slate-500">
+      <div className="max-w-[980px] w-full mx-auto ">
+        <div className="md:flex flex-col md:flex-row gap-5 md:justify-between md:py-14 p-5 text-center md:text-start">
+          <div className="mb-5">
             <h1 className="text-xl underline underline-offset-4 mb-3 font-semibold">
               Contact Us
             </h1>
@@ -14,7 +14,7 @@ const Footer = () => {
               <br />
               P.O. Box. 12533 Dar Es Salaam
             </address>
-            <div className="flex gap-2 items-center mb-3">
+            <div className="flex justify-center md:justify-start gap-2 items-center mb-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -29,7 +29,7 @@ const Footer = () => {
                 <p>comcourt@judiciary.go.tz</p>
               </a>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex justify-center md:justify-start gap-2 items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -45,39 +45,39 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div>
+          <div className="mb-5">
             <h1 className="text-xl underline underline-offset-4 mb-3 font-semibold">
               Subscribe for alerts
             </h1>
             <p className="mb-2">
-              Be the first one to get our news <br />
-              and anouncements by subscribing <br />
+              Be the first one to get our news <br /> and anouncements by
+              subscribing <br />
               to our newsletter.
             </p>
             <form action="" className="relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                className="size-5 fill-slate-400 absolute top-3 left-2"
+                className="size-5 fill-slate-400 absolute top-3 left-2 max-[760px]:hidden"
               >
                 <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
               </svg>
               <input
                 type="email"
                 placeholder="Email"
-                className="block mb-2 p-2 w-64 indent-6 border border-slate-300 rounded-md outline-none"
+                className="block mb-3 p-2 md:w-64 w-10/12 mx-auto md:mx-0 md:indent-6 border border-slate-300 rounded-md outline-none"
               />
-              <button className="block bg-sky-500 w-40 p-2 rounded-md text-xl text-slate-50 hover:bg-slate-700">
+              <button className="block bg-sky-500 md:w-40 w-10/12 mx-auto md:mx-0 p-2 rounded-md text-xl text-slate-50 hover:bg-slate-700">
                 Subscribe
               </button>
             </form>
           </div>
           <div>
-            <h1 className="text-xl underline underline-offset-4 mb-3 font-semibold">
+            <h1 className="text-xl underline underline-offset-4 mb-5 font-semibold">
               Follow Us
             </h1>
             <div>
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
                 <a
                   href="https://www.facebook.com/Mahakamayatanzania/"
                   target="_blank"
@@ -129,7 +129,6 @@ const Footer = () => {
                     <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
                   </svg>
                 </a>
-
                 <a
                   href="https://jmap.judiciary.go.tz/court-details/3c0c242e-497c-4a5a-b150-ecc847415428"
                   target="_blank"
@@ -151,13 +150,13 @@ const Footer = () => {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                className="rounded-md"
+                className="rounded-md w-full"
               ></iframe>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-1 justify-center p-4 bg-red-100 border-t-2 border-red-200">
+      <div className="flex items-center justify-center gap-1 p-4 text-sm md:text-base bg-red-100 border-t-2 border-red-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -165,7 +164,7 @@ const Footer = () => {
         >
           <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z" />
         </svg>
-        <p> Judicary of Tanzania {thisYear}. All rights reserved.</p>
+        <p> JoT {thisYear}. All rights reserved.</p>
       </div>
     </footer>
   );
