@@ -3,7 +3,7 @@ import { newsContent } from "./data";
 
 const News = () => {
   return (
-    <div className="bg-red-100 mb-16 p-8">
+    <div className="bg-red-100 mb-24 p-8">
       <div className="w-9/12 mx-auto mb-5">
         <h1 className="text-2xl font-semibold mb-3">Latest News</h1>
         <div className="flex flex-col gap-4">
@@ -49,7 +49,7 @@ const News = () => {
         </div>
       </div>
       <div className="w-9/12 mx-auto">
-        <button className="text-lg border rounded-md border-red-300 p-3 bg-red-200 hover:bg-red-400 hover:text-slate-50 hover:border-none hover:shadow-[4px_4px_0_#ef4444]">
+        <button className="text-lg text-sky-50 p-3 bg-sky-500 rounded-lg hover:bg-slate-700">
           See more news
         </button>
       </div>
