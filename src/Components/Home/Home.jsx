@@ -9,35 +9,35 @@ import home_icon from "../../assets/logo_bl.png";
 
 const Home = () => {
   return (
-    <div className="mb-24 w-full">
+    <div className="w-full mb-24">
       <div className="w-9/12 mx-auto">
-        <h1 className="text-center mb-5 text-3xl font-semibold">
+        <h1 className="mb-5 text-3xl font-semibold text-center">
           Organizational Structure
         </h1>
-        <div className="mb-16 md:text-center text-2xl">
+        <div className="mb-16 text-2xl md:text-center">
           <p className="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             dignissimos recusandae quae eos hic sequi quisquam architecto aut
             consequuntur, at odio tempora, suscipit aspernatur laborum, rem
             tempore maiores impedit! Suscipit!
           </p>
-          <div className="flex items-center md:ml-4 gap-2 underline underline-offset-4 hover:cursor-pointer text-sky-600">
+          <div className="flex items-center gap-2 underline md:ml-4 underline-offset-4 hover:cursor-pointer text-sky-600">
             <p>Find out more</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="h-5 w-8 fill-sky-600"
+              className="w-8 h-5 fill-sky-600"
             >
               <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="flex gap-1 justify-center">
+      <div className="flex justify-center gap-1">
         {pictures.map((picture) => (
           <div
             key={picture.id}
-            className="h-auto w-60 -rotate-1 text-center border-b-4 border-red-500 hover:transition-transform hover:scale-105 hover:ease-in-out hover:duration-700 rounded-lg"
+            className="h-auto text-center border-b-4 border-red-500 rounded-lg w-60 -rotate-1 hover:transition-transform hover:scale-105 hover:ease-in-out hover:duration-700"
           >
             <img src={picture.url} className="h-40 rounded-t-lg" />
             <div className="p-2 md:text-base lg:text-md">
