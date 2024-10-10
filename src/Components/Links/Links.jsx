@@ -6,7 +6,7 @@ import { links } from "./data";
 
 const Link = () => {
   return (
-    <div className="max-w-[980px] w-full mx-auto  mb-16 md:mb-24 ">
+    <div className="max-w-[980px] w-full mx-auto mb-16 md:mb-24 ">
       <div className="md:p-10 p-5">
         <h1 className="text-2xl font-bold mb-5 text-center">Related Links</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 place-items-center gap-5 md:gap-10 text-slate-500">
