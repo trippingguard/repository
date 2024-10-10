@@ -13,7 +13,7 @@ import Link from "./Components/Links/Links";
 
 const App = () => {
   return (
-    <div className="bg-hero bg-center bg-no-repeat bg-cover bg-fixed text-slate-700">
+    <div className="bg-fixed bg-center bg-no-repeat bg-cover bg-hero text-slate-950">
       <Navbar />
       <Home />
       <Judgment />

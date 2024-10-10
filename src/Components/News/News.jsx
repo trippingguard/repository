@@ -3,19 +3,19 @@ import { newsContent } from "./data";
 
 const News = () => {
   return (
-    <div className="bg-red-100 mb-24 p-8">
+    <div className="p-8 mb-24 bg-blend-overlay">
       <div className="w-9/12 mx-auto mb-5">
-        <h1 className="text-2xl font-semibold mb-3">Latest News</h1>
+        <h1 className="mb-3 text-3xl font-semibold">Latest News</h1>
         <div className="flex flex-col gap-4">
           {newsContent.map((content) => (
             <div
               key={content.id}
-              className="bg-red-50 flex gap-4 items-center cursor-pointer p-2 border border-red-200 rounded-md"
+              className="flex items-center gap-4 p-2 bg-transparent border border-red-900 rounded-md cursor-pointer"
             >
-              <img src={content.url} className="h-auto w-80 rounded-md" />
+              <img src={content.url} className="h-auto rounded-md w-80" />
               <div className="">
-                <div className="text-sm text-slate-500 flex gap-4 my-1">
-                  <div className="flex gap-1 items-center">
+                <div className="flex gap-4 my-1 text-sm text-slate-500">
+                  <div className="flex items-center gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -25,7 +25,7 @@ const News = () => {
                     </svg>
                     <p>{content.author}</p>
                   </div>
-                  <div className="flex gap-1 items-center">
+                  <div className="flex items-center gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -36,11 +36,11 @@ const News = () => {
                     <p>{content.date}</p>
                   </div>
                 </div>
-                <h1 className="mb-1 md:text-base lg:text-lg font-semibold hover:text-sky-700">
+                <h1 className="mb-1 font-semibold md:text-base lg:text-lg hover:text-sky-700">
                   {content.heading}
                 </h1>
-                <p className="md:text-sm lg:text-md mb-2">{content.content}</p>
-                <p className="text-sky-500 font-semibold hover:underline hover:underline-offset-4">
+                <p className="mb-2 md:text-sm lg:text-md">{content.content}</p>
+                <p className="font-semibold text-sky-500 hover:underline hover:underline-offset-4">
                   Read More
                 </p>
               </div>
@@ -49,7 +49,7 @@ const News = () => {
         </div>
       </div>
       <div className="w-9/12 mx-auto">
-        <button className="text-lg text-sky-50 p-3 bg-sky-500 rounded-lg hover:bg-slate-700">
+        <button className="p-3 text-lg rounded-lg text-sky-50 bg-sky-500 hover:bg-slate-700">
           See more news
         </button>
       </div>

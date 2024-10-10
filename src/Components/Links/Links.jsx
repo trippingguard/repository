@@ -8,13 +8,13 @@ const Link = () => {
   return (
     <div className="w-full mb-24 ">
       <div className="max-w-[980px] mx-auto p-10">
-        <h1 className="text-2xl font-bold mb-5 text-center">Related Links</h1>
-        <div className="grid grid-cols-3 place-items-center gap-10 text-slate-500">
+        <h1 className="mb-5 text-2xl font-bold text-center">Related Links</h1>
+        <div className="grid grid-cols-3 gap-10 place-items-center text-slate-500">
           {links.map((link) => (
             <a href={link.url} target="_blank">
-              <div className="w-full text-center p-4 border border-red-200 bg-red-50 rounded-md flex flex-col justify-center gap-2 items-center">
+              <div className="flex flex-col items-center justify-center w-full gap-2 p-4 text-center bg-transparent border border-red-200 rounded-md">
                 <img src={link.img} alt="" className="size-12" />
-                <p className="leading-6 font-semibold text-lg hover:text-sky-600 hover:underline hover:underline-offset-4">
+                <p className="text-lg font-semibold leading-6 hover:text-sky-600 hover:underline hover:underline-offset-4">
                   {link.placeholder}
                 </p>
               </div>
@@ -24,7 +24,7 @@ const Link = () => {
       </div>
     </div>
     /*
-    <div className="court container mb-16">
+    <div className="container mb-16 court">
       <ul>
         <li>
           <div className="court-text">

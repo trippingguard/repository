@@ -2,11 +2,11 @@ const Footer = () => {
   const thisYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-red-50 w-full text-slate-500">
+    <footer className="w-full bg-red-700 text-slate-200">
       <div className="max-w-[980px] mx-auto">
         <div className="flex justify-between py-14 ">
           <div>
-            <h1 className="text-xl underline underline-offset-4 mb-3 font-semibold">
+            <h1 className="mb-3 text-xl font-semibold underline underline-offset-4">
               Contact Us
             </h1>
             <address className="mb-3 not-italic">
@@ -14,7 +14,7 @@ const Footer = () => {
               <br />
               P.O. Box. 12533 Dar Es Salaam
             </address>
-            <div className="flex gap-2 items-center mb-3">
+            <div className="flex items-center gap-2 mb-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -29,7 +29,7 @@ const Footer = () => {
                 <p>comcourt@judiciary.go.tz</p>
               </a>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h1 className="text-xl underline underline-offset-4 mb-3 font-semibold">
+            <h1 className="mb-3 text-xl font-semibold underline underline-offset-4">
               Subscribe for alerts
             </h1>
             <p className="mb-2">
@@ -58,22 +58,22 @@ const Footer = () => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                className="size-5 fill-slate-400 absolute top-3 left-2"
+                className="absolute size-5 fill-slate-400 top-3 left-2"
               >
                 <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
               </svg>
               <input
                 type="email"
                 placeholder="Email"
-                className="block mb-2 p-2 w-64 indent-6 border border-slate-300 rounded-md outline-none"
+                className="block w-64 p-2 mb-2 border rounded-md outline-none indent-6 border-slate-300"
               />
-              <button className="block bg-sky-500 w-40 p-2 rounded-md text-xl text-slate-50 hover:bg-slate-700">
+              <button className="block w-40 p-2 text-xl rounded-md bg-sky-500 text-slate-50 hover:bg-slate-700">
                 Subscribe
               </button>
             </form>
           </div>
           <div>
-            <h1 className="text-xl underline underline-offset-4 mb-3 font-semibold">
+            <h1 className="mb-3 text-xl font-semibold underline underline-offset-4">
               Follow Us
             </h1>
             <div>
@@ -85,7 +85,7 @@ const Footer = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
-                    className="size-6 hover:fill-slate-700 cursor-pointer fill-blue-600"
+                    className="cursor-pointer size-6 hover:fill-slate-700 fill-blue-600"
                   >
                     <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
                   </svg>
@@ -98,7 +98,7 @@ const Footer = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
-                    className="size-6 hover:fill-slate-700 cursor-pointer fill-red-500"
+                    className="cursor-pointer size-6 hover:fill-slate-700 fill-red-500"
                   >
                     <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                   </svg>
@@ -111,7 +111,7 @@ const Footer = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
-                    className="size-6 fill-slate-700 cursor-pointer"
+                    className="cursor-pointer size-6 fill-slate-700"
                   >
                     <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                   </svg>
@@ -124,7 +124,7 @@ const Footer = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
-                    className="size-6 hover:fill-slate-700 cursor-pointer fill-red-500"
+                    className="cursor-pointer size-6 hover:fill-slate-700 fill-red-500"
                   >
                     <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
                   </svg>
@@ -138,7 +138,7 @@ const Footer = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
-                    className="size-6 hover:fill-slate-700 cursor-pointer fill-green-700"
+                    className="cursor-pointer size-6 hover:fill-slate-700 fill-green-700"
                   >
                     <path d="M256 0c17.7 0 32 14.3 32 32l0 34.7C368.4 80.1 431.9 143.6 445.3 224l34.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-34.7 0C431.9 368.4 368.4 431.9 288 445.3l0 34.7c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.7C143.6 431.9 80.1 368.4 66.7 288L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l34.7 0C80.1 143.6 143.6 80.1 224 66.7L224 32c0-17.7 14.3-32 32-32zM128 256a128 128 0 1 0 256 0 128 128 0 1 0 -256 0zm128-80a80 80 0 1 1 0 160 80 80 0 1 1 0-160z" />
                   </svg>
@@ -150,14 +150,14 @@ const Footer = () => {
                 height="200"
                 allowfullscreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-md"
               ></iframe>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-1 justify-center p-4 bg-red-100 border-t-2 border-red-200">
+      <div className="flex items-center justify-center gap-1 p-4 bg-red-900 border-t-2 border-red-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
