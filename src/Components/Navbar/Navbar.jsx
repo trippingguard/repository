@@ -17,17 +17,14 @@ const Navbar = () => {
   return (
     <header className="w-full mb-24">
       <nav className="bg-red-900">
-
         <div className="flex justify-between items-center p-2 w-[980px] mx-auto">
           <img src={logo} className="size-24" alt="" />
-          <div className="text-slate-100 text-center text-2xl font-bold">
+          <div className="text-2xl font-bold text-center text-slate-100">
             <h1 className="">High Court of Tanzania</h1>
             <h2>Commercial Division</h2>
           </div>
           <img src={logo} className="size-24" alt="" />
         </div>
-        </div>
-
       </nav>
       <ul className="flex justify-center w-full gap-3 bg-red-700 shadow">
         {menus.map((menu) => (
