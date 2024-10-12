@@ -2,10 +2,6 @@
 import React from "react";
 import "./Home.css";
 import { pictures } from "./data";
-import news1 from "../../assets/bg0_2.png";
-import news2 from "../../assets/bg0_9.png";
-import news3 from "../../assets/bg0_5.png";
-import home_icon from "../../assets/logo_bl.png";
 
 const Home = () => {
   return (

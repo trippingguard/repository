@@ -1,7 +1,7 @@
 export const newsContent = [
   {
     id: 1,
-    url: "/src/assets/bg_color.JPG",
+    url: "/assets/bg_color.JPG",
     date: "Oct 7, 2024",
     author: "Jeremiah Lubango",
     heading: "Site Inspection for Songea IJC",
@@ -12,7 +12,7 @@ export const newsContent = [
   },
   {
     id: 2,
-    url: "/src/assets/bg_color.JPG",
+    url: "/assets/bg_color.JPG",
     date: "Oct 8, 2024",
     author: "Mary Gwela",
     heading: "Site Inspection for Songea IJC",
@@ -23,7 +23,7 @@ export const newsContent = [
   },
   {
     id: 3,
-    url: "/src/assets/bg_color.JPG",
+    url: "/assets/bg_color.JPG",
     date: "Oct 6, 2024",
     author: "Timothy Mwelu",
     heading: "Site Inspection for Songea IJC",
@@ -34,7 +34,7 @@ export const newsContent = [
   },
   {
     id: 4,
-    url: "/src/assets/bg_color.JPG",
+    url: "/assets/bg_color.JPG",
     date: "Oct 9, 2024",
     author: "Lydia Churi",
     heading: "Mrundikano wa mashauri wapungua Mahakamani",

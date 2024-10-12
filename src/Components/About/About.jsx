@@ -1,26 +1,24 @@
 import React from "react";
-import about_img from "../../assets/bg_color.png";
-import play_icon from "../../assets/logo_bl.png";
 
 function About() {
   const contents = [
     {
       id: 1,
       heading: "Vision",
-      icon: "/src/assets/light-bulb.png",
+      icon: "/assets/light-bulb.png",
       description: `" To carry out the administration of Justice to the general public
               in dealing with disposal of cases effectively and efficiently ".`,
     },
     {
       id: 2,
       heading: "Mission",
-      icon: "/src/assets/mission.png",
+      icon: "/assets/mission.png",
       description: `" Timely and Accessible Justice for All ".`,
     },
     {
       id: 3,
       heading: "Major Function",
-      icon: "/src/assets/gears.png",
+      icon: "/assets/gears.png",
       description: `" Interpreting diverse Laws and execution administrative
               decisions. Hearing and deciding cases filed before the courts of
               law ".`,

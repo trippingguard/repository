@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 //import "./Courts.css";
-import court_img from "../../assets/crt_red.png";
 import { links } from "./data";
 
 const Link = () => {
