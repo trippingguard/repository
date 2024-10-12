@@ -5,10 +5,11 @@ import Hero from "./Components/Navbar/Hero/Hero";
 import Home from "./Components/Home/Home";
 import Title from "./Components/Title/Title";
 import About from "./Components/About/About";
-import Courts from "./Components/Courts/Courts";
+//import Courts from "./Components/Courts/Courts";
 import News from "./Components/News/News";
 import Judgment from "./Components/Judgements/Judgments";
 import Footer from "./Components/Footer/Footer";
+import Link from "./Components/Links/Links";
 
 const App = () => {
   return (
@@ -17,10 +18,7 @@ const App = () => {
       <Home />
       <Judgment />
       <News />
-      <div className="container">
-        <Title subTitle="Judiciary of Tanzania" title="LINKS" />
-        <Courts />
-      </div>
+      <Link />
       <About />
       <Footer />
     </div>
