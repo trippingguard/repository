@@ -15,23 +15,26 @@ const Navbar = () => {
     "Public Notice",
   ];
   return (
-    <header className="mb-16">
-      <div className="bg-slate-100">
+    <header className="mb-10 md:mb-16">
+      <div className="md:bg-slate-100 bg-slate-200 shadow-lg">
         <nav className="px-2">
-          <div className="flex items-center justify-between p-2 w-[980px] mx-auto">
-            <div className="flex items-center gap-2">
+          <div className="flex items-center md:justify-between p-2 md:w-[980px] mx-auto">
+            <div className="flex items-center gap-1 md:gap-2">
               <img src={logo} className="size-14 md:size-24" alt="" />
               <div className="flex items-center">
-                <div className="h-20 w-2 bg-red-700"></div>
-                <div className="h-20 w-2 bg-sky-500"></div>
-                <div className="h-20 w-2 bg-yellow-300"></div>
+                <div className="md:h-20 h-10 w-2 bg-red-700"></div>
+                <div className="md:h-20 h-10 w-2 bg-sky-500"></div>
+                <div className="md:h-20 h-10 w-2 bg-yellow-300"></div>
               </div>
               <div className="text-red-700 text-center md:text-2xl font-bold">
-                <h1 className="text-3xl">High Court of Tanzania</h1>
-                <h2 className="text-2xl font-semibold">Commercial Division</h2>
+                <h1 className="text-lg md:text-3xl">High Court of Tanzania</h1>
+                <h2 className="text-base font-semibold">Commercial Division</h2>
               </div>
             </div>
-            <form action="" className="relative flex items-center gap-3">
+            <form
+              action=""
+              className="relative hidden md:flex items-center gap-3"
+            >
               <div className="relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -52,11 +55,10 @@ const Navbar = () => {
                 Login
               </button>
             </form>
-            {/*<img src={logo} className="size-24 hidden md:block" alt="" />*/}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="size-8 md:hidden fill-slate-100"
+              className="size-8 md:hidden fill-red-700 ml-auto"
             >
               <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
             </svg>
