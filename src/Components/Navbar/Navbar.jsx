@@ -28,7 +28,7 @@ const Navbar = () => {
               </div>
               <div className="text-red-700 text-center md:text-2xl font-bold">
                 <h1 className="text-3xl">High Court of Tanzania</h1>
-                <h2>Commercial Division</h2>
+                <h2 className="text-2xl font-semibold">Commercial Division</h2>
               </div>
             </div>
             <form action="" className="relative flex items-center gap-3">

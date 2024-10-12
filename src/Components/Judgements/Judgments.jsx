@@ -3,14 +3,14 @@ import { contents } from "./data";
 
 const Judgment = () => {
   return (
-    <div className="bg-red-100 mb-16 p-8">
+    <div className="bg-gradient-to-b md:bg-gradient-to-r from-orange-300 via-orange-200 to-orange-200 bg-opacity-60 p-8">
       <div className="mb-5 md:w-[980px] w-full mx-auto">
         <h1 className="text-2xl font-semibold mb-3">Latest Judgments</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
           {contents.map((content) => (
             <div
               key={content.id}
-              className="bg-red-50 p-4 border border-red-200 rounded-md cursor-pointer"
+              className="bg-orange-100 p-4 border border-orange-300 rounded-md cursor-pointer"
             >
               <div className="mb-2 flex items-center gap-2">
                 <svg
@@ -41,7 +41,7 @@ const Judgment = () => {
         </div>
       </div>
       <div className="w-full md:w-[980px] mx-auto">
-        <button className="text-lg text-sky-50 p-3 bg-sky-500 rounded-lg hover:bg-slate-700">
+        <button className="text-lg text-sky-50 p-3 bg-slate-700 hover:bg-red-700">
           See more judgments
         </button>
       </div>

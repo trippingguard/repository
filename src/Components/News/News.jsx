@@ -3,25 +3,25 @@ import { newsContent } from "./data";
 
 const News = () => {
   return (
-    <div className="text-white mb-16 md:mb-24 p-8 max-w-[980px] w-full mx-auto">
-      <div className="mb-5">
-        <h1 className="text-2xl font-semibold mb-3 text-slate-900">
+    <div className="text-slate-700 bg-slate-300 w-full p-8">
+      <div className="mb-5 md:w-[980px] w-full mx-auto">
+        <h1 className="text-2xl font-semibold mb-3 text-slate-800">
           Latest News
         </h1>
         <div className="flex flex-col gap-5">
           {newsContent.map((content) => (
             <div
               key={content.id}
-              className="bg-gradient-to-r from-red-900 via-red-800 to-red-700 flex md:flex-row flex-col gap-4 items-center cursor-pointer border border-red-200"
+              className="bg-gray-200 flex md:flex-row flex-col gap-4 items-center cursor-pointer"
             >
               <img src={content.url} className="h-auto w-80" />
               <div className="">
-                <div className="text-sm text-slate-50 flex gap-4 my-1">
+                <div className="text-sm text-red-400 flex gap-4 my-1">
                   <div className="flex gap-1 items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
-                      className="fill-slate-50 size-3"
+                      className="fill-red-400 size-3"
                     >
                       <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
                     </svg>
@@ -44,7 +44,7 @@ const News = () => {
                 <p className="md:text-sm lg:text-md mb-2 mr-3">
                   {content.content}
                 </p>
-                <p className="text-cyan-400 font-semibold hover:underline hover:underline-offset-4">
+                <p className="text-slate-50 font-semibold hover:underline hover:underline-offset-4">
                   Read More
                 </p>
               </div>
@@ -52,8 +52,8 @@ const News = () => {
           ))}
         </div>
       </div>
-      <div className="">
-        <button className="text-lg text-sky-50 p-3 bg-slate-700 hover:bg-red-800">
+      <div className="w-full mx-auto md:w-[980px]">
+        <button className="text-lg text-sky-50 p-3 bg-slate-700 hover:bg-red-700">
           See more news
         </button>
       </div>
