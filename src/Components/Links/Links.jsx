@@ -6,15 +6,15 @@ import { links } from "./data";
 
 const Link = () => {
   return (
-    <div className="max-w-[980px] w-full mx-auto mb-16 md:mb-24 ">
-      <div className="md:p-10 p-5">
+    <div className="mb-16 bg-sky-900">
+      <div className="md:p-10 p-8  md:w-[980px] w-full mx-auto text-white">
         <h1 className="text-2xl font-bold mb-5 text-center">Related Links</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 place-items-center gap-5 md:gap-10 text-slate-500">
+        <div className="grid grid-cols-2 md:grid-cols-3 place-items-center gap-5 md:gap-10">
           {links.map((link) => (
             <a href={link.url} target="_blank">
-              <div className="w-full text-center p-4 border border-red-200 bg-red-50 rounded-md flex flex-col justify-center gap-2 items-center">
+              <div className="w-full text-center p-4 bg-sky-800 rounded-md flex flex-col justify-center gap-2 items-center">
                 <img src={link.img} alt="" className="size-10 md:size-12" />
-                <p className="md:leading-6 font-semibold text-sm md:text-lg hover:text-sky-600 hover:underline hover:underline-offset-4">
+                <p className="md:leading-6 font-semibold text-sm md:text-lg hover:underline hover:underline-offset-4">
                   {link.placeholder}
                 </p>
               </div>
