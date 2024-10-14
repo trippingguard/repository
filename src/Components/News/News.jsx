@@ -14,7 +14,7 @@ const News = () => {
               key={content.id}
               className="bg-gray-200 flex md:flex-row flex-col gap-4 items-center cursor-pointer"
             >
-              <img src={content.url} className="h-auto w-80" />
+              <img src={content.url} className="h-auto w-full md:w-80" />
               <div className="pl-3 md:pl-0">
                 <div className="text-sm text-red-400 flex gap-4 my-1">
                   <div className="flex gap-1 items-center">
