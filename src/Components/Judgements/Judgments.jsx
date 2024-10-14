@@ -3,7 +3,7 @@ import { contents } from "./data";
 
 const Judgment = () => {
   return (
-    <div className="bg-gradient-to-b md:bg-gradient-to-r from-orange-300 via-orange-200 to-orange-200 bg-opacity-60 p-8">
+    <div className="bg-orange-300 bg-whiteStriped bg-blend-multiply bg-opacity-60 p-8">
       <div className="mb-5 md:w-[980px] w-full mx-auto">
         <h1 className="text-2xl font-semibold mb-3">Latest Judgments</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5">

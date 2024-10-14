@@ -30,15 +30,15 @@ function About() {
         <h2 className="text-2xl font-bold mb-5 text-center">
           Judiciary of Tanzania
         </h2>
-        <div className="flex md:flex-row flex-col gap-3 text-slate-500 w-full">
+        <div className="flex md:flex-row flex-col gap-3 w-full">
           {contents.map((content) => (
             <div
               key={content.id}
-              className="w-full text-center p-3 border border-red-200 bg-red-50 rounded-md flex flex-col justify-center items-center"
+              className="w-full text-center p-5 border border-slate-300 bg-paper flex flex-col justify-center items-center"
             >
               <img
                 src={content.icon}
-                alt="vision logo"
+                alt="{content.heading} logo"
                 className="size-10 mb-3"
               />
               <h3 className="font-semibold text-xl mb-3">{content.heading}</h3>
