@@ -3,15 +3,12 @@ import { contents } from "./data";
 
 const Judgment = () => {
   return (
-    <div className="bg-orange-300 bg-whiteStriped bg-blend-multiply bg-opacity-60 p-8">
+    <div className="bg-gradient-to-r from-red-300 via-red-100 to-red-200 p-8">
       <div className="mb-5 md:w-[980px] w-full mx-auto">
         <h1 className="text-2xl font-semibold mb-3">Latest Judgments</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
           {contents.map((content) => (
-            <div
-              key={content.id}
-              className="bg-orange-100 p-4 border border-orange-300 rounded-md cursor-pointer"
-            >
+            <div key={content.id} className="bg-slate-100 p-4 cursor-pointer">
               <div className="mb-2 flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

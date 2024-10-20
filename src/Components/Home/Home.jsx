@@ -10,7 +10,7 @@ const Home = () => {
         <h1 className="mb-5 md:text-3xl text-2xl font-semibold md:text-center">
           Commercial Division
         </h1>
-        <div className="mb-16 md:text-2xl textl-lg md:text-center">
+        <div className="mb-16 md:text-2xl textl-lg md:text-center relative">
           <p className="mb-4">
             The Commercial Court was officially inaugurated on 15th September,
             1999. The Government of Tanzania endorsed the recommendations in

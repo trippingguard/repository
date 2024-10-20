@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useState } from "react";
 //import "./Navbar.css";
 import logo from "/assets/logo_bl.png";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState(false);
   const menus = [
     "Home",
     "About Us",
@@ -16,19 +17,21 @@ const Navbar = () => {
   ];
   return (
     <header className="mb-10 md:mb-16">
-      <div className="md:bg-slate-100 bg-slate-200 shadow-lg">
+      <div className="md:bg-slate-100 bg-gradient-to-r from-red-300 to-red-50 shadow-lg">
         <nav className="px-2">
           <div className="flex items-center md:justify-between p-2 md:w-[980px] mx-auto">
             <div className="flex items-center gap-1 md:gap-2">
               <img src={logo} className="size-14 md:size-24" alt="" />
               <div className="flex items-center">
                 <div className="md:h-20 h-10 w-2 bg-red-700"></div>
-                <div className="md:h-20 h-10 w-2 bg-sky-500"></div>
-                <div className="md:h-20 h-10 w-2 bg-yellow-300"></div>
+                <div className="md:h-20 h-10 w-2 bg-slate-100"></div>
+                <div className="md:h-20 h-10 w-2 bg-slate-700"></div>
               </div>
               <div className="text-red-700 text-center md:text-2xl font-bold">
                 <h1 className="text-lg md:text-3xl">High Court of Tanzania</h1>
-                <h2 className="text-base font-semibold">Commercial Division</h2>
+                <h2 className="text-base md:text-lg lg:text-xl font-semibold">
+                  Commercial Division
+                </h2>
               </div>
             </div>
             <form

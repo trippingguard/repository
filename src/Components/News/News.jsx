@@ -3,7 +3,7 @@ import { newsContent } from "./data";
 
 const News = () => {
   return (
-    <div className="text-slate-700 bg-slate-400 bg-tbee bg-blend-multiply w-full p-8">
+    <div className="text-slate-700 w-full p-8">
       <div className="mb-5 md:w-[980px] w-full mx-auto">
         <h1 className="text-2xl font-semibold mb-3 text-slate-50">
           Latest News
