@@ -1,32 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import { contents } from "./data";
 
 const Judgment = () => {
-  const contents = [
-    {
-      id: 1,
-      date: "October 4, 2024",
-      parties: "MeTL -v- JocPo Ltd",
-    },
-    {
-      id: 2,
-      date: "October 8, 2024",
-      parties: "Pamba Jiji -v- Tanzania Football Federation (TFF)",
-    },
-    {
-      id: 3,
-      date: "October 1, 2024",
-      parties:
-        "AzamFC -v- Jenada Batchelor Foundation for Children (JBFC) Funds and Welfare",
-    },
-    {
-      id: 4,
-      date: "October 2, 2024",
-      parties: "MeTL -v- Fountain Gate Foundation",
-    },
-  ];
-
   return (
+    <div className="bg-gradient-to-b md:bg-gradient-to-r from-orange-300 via-orange-200 to-orange-200 bg-opacity-60 p-8">
+      <div className="mb-5 md:w-[980px] w-full mx-auto">
+        <h1 className="text-2xl font-semibold mb-3">Latest Judgments</h1>
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
     <div className="p-8 mb-24 bg-transparent">
       <div className="w-9/12 mx-auto mb-5">
         <h1 className="mb-3 text-2xl font-semibold">Latest Judgments</h1>
@@ -34,7 +15,7 @@ const Judgment = () => {
           {contents.map((content) => (
             <div
               key={content.id}
-              className="p-4 bg-red-900 border border-red-800 rounded-md cursor-pointer bg-opacity-10"
+              className="bg-red-50 p-4 border border-red-200 rounded-md cursor-pointer"
             >
               <div className="flex items-center gap-2 mb-2">
                 <svg
@@ -47,15 +28,25 @@ const Judgment = () => {
                 <p>{content.date}</p>
               </div>
 
-              <p className="font-semibold hover:underline hover:underline-offset-4 hover:text-sky-700">
+              <p className="font-semibold hover:underline hover:underline-offset-4 hover:text-sky-700 mb-2">
                 {content.parties}
               </p>
+              <div className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  className="fill-slate-500 size-4"
+                >
+                  <path d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                </svg>
+                <p>{content.caseNo}</p>
+              </div>
             </div>
           ))}
         </div>
       </div>
       <div className="w-9/12 mx-auto">
-        <button className="p-3 text-lg rounded-lg text-sky-50 bg-sky-500 hover:bg-slate-700">
+        <button className="text-lg text-sky-50 p-3 bg-sky-500 rounded-lg hover:bg-slate-700">
           See more judgments
         </button>
       </div>

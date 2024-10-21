@@ -32,4 +32,15 @@ export const newsContent = [
       fugit, sed officia, et in maiores! Eveniet minima repudiandae facere
       reiciendis necessitatibus amet dolorem nobis?`,
   },
+  {
+    id: 4,
+    url: "/src/assets/bg_color.JPG",
+    date: "Oct 9, 2024",
+    author: "Lydia Churi",
+    heading: "Mrundikano wa mashauri wapungua Mahakamani",
+    content: `Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Iste fugiat ratione iure at numquam, aliquid
+      fugit, sed officia, minima repudiandae facere
+      reiciendis necessitatibus amet dolorem nobis?`,
+  },
 ];
