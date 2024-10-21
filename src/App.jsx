@@ -1,25 +1,25 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Home/Home";
-import About from "./Components/About/About";
-//import Courts from "./Components/Courts/Courts";
-import News from "./Components/News/News";
-import Judgment from "./Components/Judgements/Judgments";
 import Footer from "./Components/Footer/Footer";
-import Link from "./Components/Links/Links";
+import Home from "./Components/Home/Home";
+import NotFound from "./Components/NotFound";
+import Login from "./Components/Login";
 
 const App = () => {
   return (
-    <div className="bg-fixed bg-center bg-no-repeat bg-cover bg-hero text-slate-950">
-      <Navbar />
-      <Home />
-      <Judgment />
-      <News />
-      <Link />
-      <About />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="bg-hero bg-center bg-cover bg-fixed">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="login" element={<Login />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 };
 
