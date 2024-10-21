@@ -1,34 +1,29 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
-//import "./Navbar.css";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "/assets/logo_bl.png";
+import Login from "../Login";
 
 const Navbar = () => {
-  const menus = [
-    "Home",
-    "About Us",
-    "Causelist",
-    "Publications",
-    "Legislation",
-    "Judgment & Ruling",
-    "Forms",
-    "Public Notice",
-  ];
+  const [menu, setMenu] = useState(false);
+
   return (
     <header className="mb-10 md:mb-16">
-      <div className="md:bg-slate-100 bg-slate-200 shadow-lg">
+      <div className="md:bg-slate-100 bg-gradient-to-r from-red-300 to-red-50 shadow-lg">
         <nav className="px-2">
           <div className="flex items-center md:justify-between p-2 md:w-[980px] mx-auto">
             <div className="flex items-center gap-1 md:gap-2">
               <img src={logo} className="size-14 md:size-24" alt="" />
               <div className="flex items-center">
                 <div className="md:h-20 h-10 w-2 bg-red-700"></div>
-                <div className="md:h-20 h-10 w-2 bg-sky-500"></div>
-                <div className="md:h-20 h-10 w-2 bg-yellow-300"></div>
+                <div className="md:h-20 h-10 w-2 bg-slate-100"></div>
+                <div className="md:h-20 h-10 w-2 bg-slate-700"></div>
               </div>
               <div className="text-red-700 text-center md:text-2xl font-bold">
                 <h1 className="text-lg md:text-3xl">High Court of Tanzania</h1>
-                <h2 className="text-base font-semibold">Commercial Division</h2>
+                <h2 className="text-base md:text-lg lg:text-xl font-semibold">
+                  Commercial Division
+                </h2>
               </div>
             </div>
             <form
@@ -51,9 +46,11 @@ const Navbar = () => {
                   className="p-2 w-full border border-slate-600 outline-none rounded-md"
                 />
               </div>
-              <button className="bg-red-700 py-2 px-5 rounded-md text-slate-50">
-                Login
-              </button>
+              <Link to="login">
+                <button className="bg-red-700 py-2 px-5 rounded-md text-slate-50">
+                  Login
+                </button>
+              </Link>
             </form>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -65,14 +62,32 @@ const Navbar = () => {
           </div>
         </nav>
         <ul className="hidden md:flex justify-center w-full gap-3 bg-red-700 shadow">
-          {menus.map((menu) => (
-            <li
-              key={menu}
-              className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4"
-            >
-              {menu}
+          <Link to="/">
+            <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
+              Home
             </li>
-          ))}
+          </Link>
+          <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
+            About Us
+          </li>
+          <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
+            Causelist
+          </li>
+          <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
+            Publications
+          </li>
+          <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
+            Legislation
+          </li>
+          <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
+            Judgments & Ruling
+          </li>
+          <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
+            Forms
+          </li>
+          <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
+            Public Notice
+          </li>
         </ul>
       </div>
     </header>
