@@ -2,10 +2,10 @@ const Footer = () => {
   const thisYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-red-50 text-slate-500">
-      <div className="max-w-[980px] mx-auto">
-        <div className="flex justify-between py-14 ">
-          <div>
+    <footer className="w-full bg-center bg-cover bg-red-950 bg-blend-multiply bg-paper text-slate-50">
+      <div className="max-w-[980px] w-full mx-auto ">
+        <div className="flex-col gap-5 p-5 text-center md:flex md:flex-row md:justify-between md:py-14 md:text-start">
+          <div className="mb-5">
             <h1 className="mb-3 text-xl font-semibold underline underline-offset-4">
               Contact Us
             </h1>
@@ -58,16 +58,16 @@ const Footer = () => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                className="absolute size-5 fill-slate-400 top-3 left-2"
+                className="size-5 fill-slate-400 absolute top-3 left-2 max-[760px]:hidden"
               >
                 <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
               </svg>
               <input
                 type="email"
                 placeholder="Email"
-                className="block w-64 p-2 mb-2 border rounded-md outline-none indent-6 border-slate-300"
+                className="block w-10/12 p-2 mx-auto mb-3 outline-none md:w-64 md:mx-0 md:indent-6 text-slate-400"
               />
-              <button className="block w-40 p-2 text-xl rounded-md bg-sky-500 text-slate-50 hover:bg-slate-700">
+              <button className="block w-10/12 p-2 mx-auto text-xl bg-sky-500 md:w-40 md:mx-0 text-slate-50 hover:bg-orange-400">
                 Subscribe
               </button>
             </form>
@@ -149,14 +149,14 @@ const Footer = () => {
                 height="200"
                 allowfullscreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-md"
               ></iframe>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-1 p-4 bg-red-100 border-t-2 border-red-200">
+      <div className="flex items-center justify-center gap-1 p-4 text-sm border-t md:text-base border-slate-50 bg-red-950">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
