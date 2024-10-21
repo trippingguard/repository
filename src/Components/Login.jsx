@@ -9,7 +9,7 @@ const Login = () => {
         </div>
 
         <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form action="#" method="POST" className="space-y-4">
+          <form action="#" method="POST" className="space-y-5">
             <div>
               <label htmlFor="email" className="block font-medium leading-6">
                 Username
