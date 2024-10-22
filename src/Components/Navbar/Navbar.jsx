@@ -9,32 +9,32 @@ const Navbar = () => {
 
   return (
     <header className="mb-10 md:mb-16">
-      <div className="md:bg-slate-100 bg-gradient-to-r from-red-300 to-red-50 shadow-lg">
+      <div className="shadow-lg md:bg-slate-100 bg-gradient-to-r from-red-600 to-red-500">
         <nav className="px-2">
           <div className="flex items-center md:justify-between p-2 md:w-[980px] mx-auto">
             <div className="flex items-center gap-1 md:gap-2">
               <img src={logo} className="size-14 md:size-24" alt="" />
               <div className="flex items-center">
-                <div className="md:h-20 h-10 w-2 bg-red-700"></div>
-                <div className="md:h-20 h-10 w-2 bg-slate-100"></div>
-                <div className="md:h-20 h-10 w-2 bg-slate-700"></div>
+                <div className="w-2 h-10 bg-red-700 md:h-20"></div>
+                <div className="w-2 h-10 md:h-20 bg-slate-100"></div>
+                <div className="w-2 h-10 md:h-20 bg-slate-700"></div>
               </div>
-              <div className="text-red-700 text-center md:text-2xl font-bold">
+              <div className="font-bold text-center text-black-700 md:text-2xl">
                 <h1 className="text-lg md:text-3xl">High Court of Tanzania</h1>
-                <h2 className="text-base md:text-lg lg:text-xl font-semibold">
+                <h2 className="text-base font-semibold md:text-lg lg:text-xl">
                   Commercial Division
                 </h2>
               </div>
             </div>
             <form
               action=""
-              className="relative hidden md:flex items-center gap-3"
+              className="relative items-center hidden gap-3 md:flex"
             >
               <div className="relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  className="size-5 fill-slate-400 absolute top-3 right-2"
+                  className="absolute size-5 fill-slate-400 top-3 right-2"
                 >
                   <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                 </svg>
@@ -43,11 +43,11 @@ const Navbar = () => {
                   name="search"
                   id="search"
                   placeholder="Search"
-                  className="p-2 w-full border border-slate-600 outline-none rounded-md"
+                  className="w-full p-2 border rounded-md outline-none border-slate-600"
                 />
               </div>
               <Link to="login">
-                <button className="bg-red-700 py-2 px-5 rounded-md text-slate-50">
+                <button className="px-5 py-2 bg-red-700 rounded-md text-slate-50">
                   Login
                 </button>
               </Link>
@@ -55,13 +55,13 @@ const Navbar = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="size-8 md:hidden fill-red-700 ml-auto"
+              className="ml-auto size-8 md:hidden fill-red-700"
             >
               <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
             </svg>
           </div>
         </nav>
-        <ul className="hidden md:flex justify-center w-full gap-3 bg-red-700 shadow">
+        <ul className="justify-center hidden w-full gap-3 bg-red-700 shadow md:flex">
           <Link to="/">
             <li className="p-2 text-base cursor-pointer text-slate-200 hover:text-orange-200 hover:underline hover:underline-offset-4">
               Home
