@@ -14,6 +14,9 @@ export default {
         paper: "url('/assets/paper_texture.jpg')",
         whiteStriped: "url('/assets/white-striped-paper.jpg')",
       },
+      fontFamily: {
+        raleway: '"Inter", sans-serif',
+      },
     },
   },
   plugins: [],
