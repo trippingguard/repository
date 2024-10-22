@@ -7,19 +7,19 @@
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "a95da0bf",
+      "fileHash": "906003b3",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "d6fdf445",
+      "fileHash": "beaaa9a0",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.js",
       "file": "react-router-dom.js",
-      "fileHash": "2638bb46",
+      "fileHash": "36c9bafc",
       "needsInterop": false
     }
   },
