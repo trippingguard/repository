@@ -3,13 +3,13 @@ import { contents } from "./data";
 
 const Judgment = () => {
   return (
-    <div className="bg-gradient-to-r from-red-300 via-red-100 to-red-200 p-8">
+    <div className="p-8 bg-transparent ">
       <div className="mb-5 md:w-[980px] w-full mx-auto">
-        <h1 className="text-2xl font-semibold mb-3">Latest Judgments</h1>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
+        <h1 className="mb-3 text-2xl font-semibold text-red-700">Latest Judgments</h1>
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
           {contents.map((content) => (
-            <div key={content.id} className="bg-slate-100 p-4 cursor-pointer">
-              <div className="mb-2 flex items-center gap-2">
+            <div key={content.id} className="p-4 cursor-pointer bg-stone-400">
+              <div className="flex items-center gap-2 mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
@@ -20,7 +20,7 @@ const Judgment = () => {
                 <p>{content.date}</p>
               </div>
 
-              <p className="font-semibold hover:underline hover:underline-offset-4 hover:text-sky-700 mb-2">
+              <p className="mb-2 font-semibold hover:underline hover:underline-offset-4 hover:text-sky-700">
                 {content.parties}
               </p>
               <div className="flex items-center gap-2">
@@ -38,7 +38,7 @@ const Judgment = () => {
         </div>
       </div>
       <div className="w-full md:w-[980px] mx-auto">
-        <button className="text-lg text-sky-50 p-3 bg-slate-700 hover:bg-red-700">
+        <button className="p-3 text-lg text-sky-50 bg-slate-700 hover:bg-red-700">
           See more judgments
         </button>
       </div>

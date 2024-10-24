@@ -5,15 +5,15 @@ import { links } from "./data";
 
 const Link = () => {
   return (
-    <div className="mb-16 bg-gradient-to-r from-red-300 via-red-100 to-red-200">
+    <div className="mb-16 bg-transparent-to-r from-red-500 via-red-400 to-red-500">
       <div className="md:p-10 p-8  md:w-[980px] w-full mx-auto">
-        <h1 className="text-2xl font-bold mb-5 text-center">Related Links</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 place-items-center gap-5 md:gap-10">
+        <h1 className="mb-5 text-2xl font-bold text-center text-red-700">Related Links</h1>
+        <div className="grid grid-cols-2 gap-5 md:grid-cols-3 place-items-center md:gap-10">
           {links.map((link) => (
             <a href={link.url} target="_blank">
-              <div className="w-full text-center p-4 bg-slate-100 flex flex-col justify-center gap-2 items-center">
+              <div className="flex flex-col items-center justify-center w-full gap-2 p-4 text-center bg-transparent">
                 <img src={link.img} alt="" className="size-10 md:size-12" />
-                <p className="md:leading-6 font-semibold text-sm md:text-lg hover:underline hover:underline-offset-4">
+                <p className="text-sm font-semibold md:leading-6 md:text-lg hover:underline hover:underline-offset-4">
                   {link.placeholder}
                 </p>
               </div>
@@ -23,7 +23,7 @@ const Link = () => {
       </div>
     </div>
     /*
-    <div className="court container mb-16">
+    <div className="container mb-16 court">
       <ul>
         <li>
           <div className="court-text">

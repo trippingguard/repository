@@ -3,19 +3,19 @@ import { newsContent } from "./data";
 
 const News = () => {
   return (
-    <div className="text-slate-700 w-full p-8">
+    <div className="w-full p-8 text-slate-700">
       <div className="mb-5 md:w-[980px] w-full mx-auto">
-        <h1 className="text-2xl font-semibold mb-3">Latest News</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <h1 className="mb-3 text-2xl font-semibold text-red-700">Latest News</h1>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {newsContent.map((content) => (
             <div
               key={content.id}
               className="flex flex-col gap-4 cursor-pointer"
             >
-              <img src={content.url} className="h-auto w-full" />
+              <img src={content.url} className="w-full h-auto" />
               <div className="">
-                <div className="text-sm text-slate-500 flex gap-4 my-1">
-                  <div className="flex gap-1 items-center">
+                <div className="flex gap-4 my-1 text-sm text-slate-500">
+                  <div className="flex items-center gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -25,7 +25,7 @@ const News = () => {
                     </svg>
                     <p>{content.author}</p>
                   </div>
-                  <div className="flex gap-1 items-center">
+                  <div className="flex items-center gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -36,11 +36,11 @@ const News = () => {
                     <p>{content.date}</p>
                   </div>
                 </div>
-                <h1 className="mb-1 md:text-base lg:text-lg font-semibold hover:underline hover:underline-offset-4">
+                <h1 className="mb-1 font-semibold md:text-base lg:text-lg hover:underline hover:underline-offset-4">
                   {content.heading}
                 </h1>
-                <p className="lg:text-md mb-2 mr-3">{content.content}</p>
-                <p className="text-sky-500 mb-3 font-semibold hover:underline hover:underline-offset-4">
+                <p className="mb-2 mr-3 lg:text-md">{content.content}</p>
+                <p className="mb-3 font-semibold text-sky-500 hover:underline hover:underline-offset-4">
                   Read More
                 </p>
               </div>
@@ -49,7 +49,7 @@ const News = () => {
         </div>
       </div>
       <div className="w-full mx-auto md:w-[980px]">
-        <button className="text-lg text-sky-50 p-3 bg-slate-700 hover:bg-red-700">
+        <button className="p-3 text-lg text-sky-50 bg-slate-700 hover:bg-red-700">
           See more news
         </button>
       </div>

@@ -27,21 +27,21 @@ function About() {
   return (
     <div className="max-w-[980px] w-full mx-auto mb-16 md:mb-24 p-5">
       <div className="about-right">
-        <h2 className="text-2xl font-bold mb-5 text-center">
+        <h2 className="mb-5 text-2xl font-bold text-center text-red-700">
           Judiciary of Tanzania
         </h2>
-        <div className="flex md:flex-row flex-col gap-3 w-full">
+        <div className="flex flex-col w-full gap-3 md:flex-row">
           {contents.map((content) => (
             <div
               key={content.id}
-              className="w-full text-center p-5 border border-slate-300 bg-paper flex flex-col justify-center items-center"
+              className="flex flex-col items-center justify-center w-full p-5 text-center border border-slate-300 bg-paper"
             >
               <img
                 src={content.icon}
                 alt="{content.heading} logo"
-                className="size-10 mb-3"
+                className="mb-3 size-10"
               />
-              <h3 className="font-semibold text-xl mb-3">{content.heading}</h3>
+              <h3 className="mb-3 text-xl font-semibold">{content.heading}</h3>
               <p className="text-md">{content.description}</p>
             </div>
           ))}
